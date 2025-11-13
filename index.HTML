@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedapillo – Innovación en cuidado bucal</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;900&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <!-- SECCIÓN DE VIDEO -->
+<section class="video-section">
+  <h2>Introducción Sedapillo</h2>
+  <p>Conoce de forma rápida la esencia de nuestro diseño y su propuesta innovadora.</p>
+
+  <video controls autoplay muted loop playsinline>
+    <source src="video/introsedapillo.mp4" type="video/mp4">
+    Tu navegador no soporta la reproducción de video.
+  </video>
+</section>
+
+  <!-- HERO PRINCIPAL -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>SEDAPILLO</h1>
+      <p>Higiene completa en un solo movimiento</p>
+      <a href="#prototipo" class="btn-primary">Ver modelo 3D</a>
+    </div>
+    <div class="hero-model">
+      <model-viewer src="sedapillo.glb" alt="Prototipo Sedapillo" auto-rotate camera-controls shadow-intensity="1" ar></model-viewer>
+    </div>
+  </header>
+
+  <!-- INNOVACIÓN -->
+  <section class="innovacion">
+    <div class="text-block">
+      <h2>Innovación que simplifica tu rutina</h2>
+      <p>El diseño retráctil del Sedapillo integra un sistema de seda dental dentro del mango, ofreciendo una experiencia completa de higiene bucal en un solo dispositivo. Su ergonomía, materiales sostenibles y estética moderna lo hacen ideal para quienes buscan practicidad e innovación.</p>
+    </div>
+    <img src="img/sedapillomecanismo.png" alt="Detalle técnico Sedapillo" class="section-img">
+  </section>
+
+  <!-- GALERÍA INTERCALADA -->
+  <section class="galeria">
+    <h2>En acción y detalle</h2>
+    <div class="gallery-grid">
+      <img src="img/sedapillo.png" alt="Sedapillo principal">
+      <img src="img/sedapillolavabo.png" alt="Sedapillo en uso">
+      <img src="img/sedapillohojas.png" alt="Sedapillo ecológico">
+      <img src="img/sedapillomecanismo2.png" alt="Detalle del hilo retráctil">
+    </div>
+  </section>
+
+  <!-- PROTOTIPO 3D -->
+  <section id="prototipo" class="prototipo">
+    <h2>Prototipo 3D interactivo</h2>
+    <p>Explora, gira y amplía el modelo digital del Sedapillo para descubrir cada detalle de su diseño retráctil e innovador.</p>
+    <model-viewer src="sedapillo.glb" alt="Prototipo Sedapillo" auto-rotate camera-controls shadow-intensity="1" ar></model-viewer>
+  </section>
+
+  <!-- SOSTENIBILIDAD -->
+  <section class="sostenibilidad">
+    <h2>Diseñado para el futuro</h2>
+    <p>El Sedapillo combina funcionalidad y responsabilidad ambiental. Fabricado con materiales reciclables, promueve una rutina dental práctica y ecológica, reduciendo el consumo de plásticos desechables.</p>
+    <img src="img/sedapilloeco.png" alt="Sedapillo ecológico">
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Proyecto académico Marketing – Sedapillo  | Desarrollado por Michael Lopez</p>
+    <p>Escanea el QR o visita la web del prototipo</p>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE -->
+  <a href="#prototipo" class="float-btn">Ver modelo 3D</a>
+
+</body>
+</html>
